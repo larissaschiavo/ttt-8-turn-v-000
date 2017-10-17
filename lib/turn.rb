@@ -40,8 +40,5 @@ def turn(board)
   if valid_move?(board, i)
     move(board, i, char)
     display_board(board)
-  elsif valid_move?(board, i) == false
-    puts "Please re-enter your input:"
-    gets.chomp
   end
 end
