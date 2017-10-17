@@ -37,5 +37,11 @@ def turn(board)
 
   i = input_to_index(inp)
 
+  if valid_move?(board,i) == false
+    puts "Please re-enter your input:"
+    gets.chomp
+  end 
 
+  move(board, i)
+  display_board(board)
 end
